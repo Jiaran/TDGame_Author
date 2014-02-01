@@ -1,0 +1,50 @@
+<html><head><title>jgame.platform package overview</title></head>
+<body>
+
+Contains the platform-dependent JGame classes.
+
+
+<P>
+The packages jgame and jgame.platform contain all the classes you need to
+import to write your own game.
+
+<P>
+
+The main classes are jgame.platform.JGEngine (the whole game) and
+jgame.JGObject (a game object).  Sublass these to write your own game.  It's
+handy to have your JGObject classes as inner classes of your JGengine.
+jgame.JGTimer is used for creating timers in your games.  JGImage is an
+interface defining the cross-platform image methods that are used by JGame but
+can be used stand-alone as well.  
+
+<P>
+
+StdGame is a game framework that handles a standard game state machine
+(startlevel, life lost, game over, etc).  It is built as a layer on top of
+JGEngine.  
+
+<P>
+
+AppConfig (JRE only) is a stand-alone class that can be used for game
+configuration.  It is used by the JRE version of StdGame for handling keyboard
+settings.  Highscores is a helper class that can be used to implement
+highscores.   It is also used by the JRE version of StdGame.
+
+<P>
+
+JGame should also come with a user manual (the file MANUAL).  It is
+distributed under the revised BSD license (see the file LICENSE).
+More information can be found on the website,
+http://www.13thmonkey.org/~boris/jgame/  
+
+<P>
+December 9 2013
+
+These packages have been editing by team FooBar as a part of the OOGASalad project 
+for Duke University's Compsci 308 course. We have added in new states to StdGame 
+to indicate when the user has won the game, as compared to losing. In addition, 
+we have added functionality to resize images, and change image transparency. We 
+have also modified the use of image URLs so that all URLs are relative to the src 
+folder of the package, and added methods to change the names of the game as well 
+as game score and lives.
+</body></html>
